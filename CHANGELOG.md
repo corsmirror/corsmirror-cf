@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/CORSmirror/corsmirror-cf/compare/v1.0.0...v1.0.1) (2023-05-23)
+
+
+### Bug Fixes
+
+* **functions:** handle CORS preflight requests in v1 ([f44bc09](https://github.com/CORSmirror/corsmirror-cf/commit/f44bc090a1c9778f5757a0192185d489eb747d60))
+
 ## 1.0.0 (2023-05-23)
 
 
