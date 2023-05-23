@@ -5,6 +5,7 @@
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
     "build": "scripts/build.sh",
+    "clean": "rm -rf coverage dist",
     "start": "npm run build && wrangler pages dev dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
