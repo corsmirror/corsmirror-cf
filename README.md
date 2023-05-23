@@ -28,6 +28,8 @@ fetch('https://corsmirror.com/v1?url=http://example.com')
   .then((data) => console.log(data));
 ```
 
+Try it out: https://corsmirror.com/v1?url=http://example.com
+
 ## Development
 
 ### Installation
