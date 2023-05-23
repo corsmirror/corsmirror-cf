@@ -1,0 +1,10 @@
+{
+  "name": "corsmirror-cf",
+  "version": "1.0.0-alpha",
+  "description": "CORSmirror Cloudflare",
+  "author": "Mark <mark@remarkablemark.org>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
