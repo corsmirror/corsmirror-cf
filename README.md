@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://corsmirror.pages.dev/">
+  <a href="https://corsmirror.com/">
     <img src="https://github.com/CORSmirror.png?size=300" alt="CORSmirror">
   </a>
 </p>
@@ -15,7 +15,7 @@ Built with:
 RESTful API:
 
 ```
-https://corsmirror.pages.dev/v1?url=<url>
+https://corsmirror.com/v1?url=<url>
 ```
 
 > Replace `<url>` with your URL.
@@ -23,7 +23,7 @@ https://corsmirror.pages.dev/v1?url=<url>
 So to [fetch](https://developer.mozilla.org/docs/Web/API/Fetch_API/Using_Fetch) [`http://example.com`](http://example.com):
 
 ```js
-fetch('https://corsmirror.pages.dev/v1?url=http://example.com')
+fetch('https://corsmirror.com/v1?url=http://example.com')
   .then((response) => response.text())
   .then((data) => console.log(data));
 ```
