@@ -1,0 +1,30 @@
+name: build
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint commit message
+        run: npx commitlint --from=HEAD~1
+
+      - name: Lint codebase
+        run: npm run lint
+
+      - name: Check type
+        run: npm run lint:tsc
