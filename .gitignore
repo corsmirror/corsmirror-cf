@@ -1,0 +1,7 @@
+*.log
+*.swp
+.DS_Store
+cdn-cgi/
+coverage/
+dist/
+node_modules/
