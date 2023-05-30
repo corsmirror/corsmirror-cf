@@ -1,3 +1,5 @@
+import { CORS_HEADERS } from './constants';
+
 /**
  * @see {@link https://developers.cloudflare.com/workers/examples/cors-header-proxy/}
  */
@@ -16,7 +18,9 @@ export const onRequest: PagesFunction = async (context) => {
   response = new Response(response.body, response);
 
   // Set CORS headers
-  response.headers.set('Access-Control-Allow-Origin', '*');
+  Object.values(CORS_HEADERS).forEach((header) => {
+    response.headers.set(header, '*');
+  });
 
   // Append to/Add Vary header so browser will cache response correctly
   response.headers.append('Vary', 'Origin');
@@ -29,9 +33,9 @@ export const onRequest: PagesFunction = async (context) => {
  */
 export const onRequestOptions: PagesFunction = async () => {
   return new Response(null, {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': '*',
-    },
+    headers: Object.values(CORS_HEADERS).reduce((accumulator, currentValue) => {
+      accumulator[currentValue] = '*';
+      return accumulator;
+    }, {}),
   });
 };
