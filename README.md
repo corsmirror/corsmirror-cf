@@ -65,6 +65,14 @@ open http://127.0.0.1:8788
 
 This is an open source project so feel free to fork the [repository](https://github.com/CORSmirror/corsmirror-cf/fork). Contributions are welcome!
 
+## Support
+
+- [GitHub Sponsors](https://b.remarkabl.org/github-sponsors)
+- [Patreon](https://b.remarkabl.org/patreon)
+- [Ko-fi](https://b.remarkabl.org/ko-fi)
+- [Liberapay](https://b.remarkabl.org/liberapay)
+- [Teespring](https://b.remarkabl.org/teespring)
+
 ## License
 
 [MIT](https://github.com/CORSmirror/corsmirror-cf/blob/master/LICENSE)
