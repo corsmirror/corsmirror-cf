@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/CORSmirror/corsmirror-cf/compare/v1.0.1...v1.0.2) (2023-05-30)
+
+
+### Bug Fixes
+
+* **functions:** set header "Access-Control-Allow-Methods" to "*" ([dd7e776](https://github.com/CORSmirror/corsmirror-cf/commit/dd7e77640d9bf785975f370d8dcd637dd3c4a496))
+
 ## [1.0.1](https://github.com/CORSmirror/corsmirror-cf/compare/v1.0.0...v1.0.1) (2023-05-23)
 
 
