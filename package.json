@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20230518.0",
-    "@commitlint/cli": "17.6.5",
+    "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.5",
     "@typescript-eslint/eslint-plugin": "5.60.1",
     "@typescript-eslint/parser": "5.60.0",
