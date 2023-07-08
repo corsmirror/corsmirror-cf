@@ -1,4 +1,4 @@
-import { CORS_HEADERS } from './constants';
+import { CORS_HEADERS, HTTP_STATUS_CODES } from './constants';
 
 /**
  * GET|HEAD|POST|PUT|DELETE|PATCH /v1
@@ -10,6 +10,12 @@ import { CORS_HEADERS } from './constants';
  */
 export const onRequest: PagesFunction = async (context) => {
   const url = new URL(context.request.url).searchParams.get('url');
+
+  if (!url) {
+    return new Response('Invalid URL string.', {
+      status: HTTP_STATUS_CODES.BAD_REQUEST,
+    });
+  }
 
   // Rewrite request to point to target URL.
   // This also makes the request mutable so you can add the correct
