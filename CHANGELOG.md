@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/CORSmirror/corsmirror-cf/compare/v1.0.2...v1.0.3) (2023-07-08)
+
+
+### Bug Fixes
+
+* **functions:** respond with 400 Bad Request for invalid url string ([a127fb4](https://github.com/CORSmirror/corsmirror-cf/commit/a127fb4f404973c628e5d2fc3efd26a55286d9c0))
+
 ## [1.0.2](https://github.com/CORSmirror/corsmirror-cf/compare/v1.0.1...v1.0.2) (2023-05-30)
 
 
