@@ -14,11 +14,15 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@cloudflare/workers-types": "4.20230628.0",
     "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.6",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
+    "cypress": "^12.17.0",
+    "cypress-cucumber-steps": "^2.5.0",
     "eslint": "8.44.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-simple-import-sort": "10.0.0",
