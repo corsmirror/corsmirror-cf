@@ -51,7 +51,7 @@ export const onRequestOptions: PagesFunction = () => {
       accumulator[currentValue] = '*';
       return accumulator;
     },
-    {}
+    {},
   );
   return new Response(null, { headers });
 };

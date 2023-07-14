@@ -11,7 +11,7 @@ export default defineConfig({
       await addCucumberPreprocessorPlugin(on, config);
       on(
         'file:preprocessor',
-        createBundler({ plugins: [createEsbuildPlugin(config)] })
+        createBundler({ plugins: [createEsbuildPlugin(config)] }),
       );
       return config;
     },
