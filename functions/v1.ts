@@ -1,4 +1,8 @@
-import { CORS_HEADERS, HTTP_STATUS_CODES } from './constants';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { BAD_REQUEST } from 'costatus';
+
+import { CORS_HEADERS } from './constants';
 
 /**
  * GET|HEAD|POST|PUT|DELETE|PATCH /v1
@@ -13,7 +17,7 @@ export const onRequest: PagesFunction = async (context) => {
 
   if (!url) {
     return new Response('Invalid URL string.', {
-      status: HTTP_STATUS_CODES.BAD_REQUEST,
+      status: BAD_REQUEST,
     });
   }
 
