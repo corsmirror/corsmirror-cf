@@ -13,16 +13,19 @@
     "postinstall": "husky install",
     "start": "npm run build && wrangler pages dev dist"
   },
+  "dependencies": {
+    "costatus": "1.0.0"
+  },
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@badeball/cypress-cucumber-preprocessor": "18.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
     "@cloudflare/workers-types": "4.20230710.1",
     "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.6",
     "@typescript-eslint/eslint-plugin": "6.0.0",
     "@typescript-eslint/parser": "6.0.0",
-    "cypress": "^12.17.1",
-    "cypress-cucumber-steps": "^2.10.0",
+    "cypress": "12.17.1",
+    "cypress-cucumber-steps": "2.10.0",
     "eslint": "8.45.0",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-simple-import-sort": "10.0.0",
