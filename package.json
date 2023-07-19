@@ -20,7 +20,7 @@
     "@badeball/cypress-cucumber-preprocessor": "18.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
     "@cloudflare/workers-types": "4.20230717.0",
-    "@commitlint/cli": "17.6.6",
+    "@commitlint/cli": "17.6.7",
     "@commitlint/config-conventional": "17.6.7",
     "@typescript-eslint/eslint-plugin": "6.1.0",
     "@typescript-eslint/parser": "6.1.0",
