@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "17.7.0",
     "@typescript-eslint/eslint-plugin": "6.4.0",
     "@typescript-eslint/parser": "6.4.1",
-    "cypress": "12.17.3",
+    "cypress": "12.17.4",
     "cypress-cucumber-steps": "2.10.0",
     "eslint": "8.47.0",
     "eslint-plugin-prettier": "5.0.0",
