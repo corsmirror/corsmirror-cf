@@ -23,7 +23,7 @@
     "@commitlint/cli": "17.7.2",
     "@commitlint/config-conventional": "17.7.0",
     "@typescript-eslint/eslint-plugin": "6.7.5",
-    "@typescript-eslint/parser": "6.7.4",
+    "@typescript-eslint/parser": "6.7.5",
     "cypress": "13.3.0",
     "cypress-cucumber-steps": "3.14.0",
     "eslint": "8.51.0",
