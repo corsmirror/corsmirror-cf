@@ -22,7 +22,7 @@
     "@cloudflare/workers-types": "4.20231025.0",
     "@commitlint/cli": "18.2.0",
     "@commitlint/config-conventional": "18.1.0",
-    "@typescript-eslint/eslint-plugin": "6.9.1",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.10.0",
     "cypress": "13.4.0",
     "cypress-cucumber-steps": "3.15.0",
