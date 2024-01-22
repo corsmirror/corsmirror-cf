@@ -21,7 +21,7 @@
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
     "@cloudflare/workers-types": "4.20240117.0",
     "@commitlint/cli": "18.5.0",
-    "@commitlint/config-conventional": "18.4.4",
+    "@commitlint/config-conventional": "18.5.0",
     "@typescript-eslint/eslint-plugin": "6.19.0",
     "@typescript-eslint/parser": "6.19.0",
     "cypress": "13.6.3",
