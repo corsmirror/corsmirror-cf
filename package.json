@@ -1,6 +1,6 @@
 {
   "name": "corsmirror-cf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CORSmirror Cloudflare",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
