@@ -13,10 +13,6 @@ updates:
       commitlint:
         patterns:
           - '@commitlint/*'
-      parcel:
-        patterns:
-          - parcel
-          - '@parcel/*'
       prettier:
         patterns:
           - prettier
