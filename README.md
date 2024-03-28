@@ -55,10 +55,10 @@ Start the development server:
 npm start
 ```
 
-Open [http://127.0.0.1:8788](http://127.0.0.1:8788) to view it in the browser:
+Open [http://127.0.0.1:8787](http://127.0.0.1:8787) to view it in the browser:
 
 ```sh
-open http://127.0.0.1:8788
+open http://127.0.0.1:8787
 ```
 
 ## Contributions
