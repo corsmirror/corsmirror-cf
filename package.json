@@ -33,7 +33,7 @@
     "husky": "9.0.11",
     "lint-staged": "15.2.2",
     "marked": "12.0.1",
-    "typescript": "5.4.4",
+    "typescript": "5.4.5",
     "wrangler": "3.48.0"
   },
   "private": true,
