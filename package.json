@@ -34,7 +34,7 @@
     "lint-staged": "15.2.5",
     "marked": "12.0.2",
     "typescript": "5.4.5",
-    "wrangler": "3.57.0"
+    "wrangler": "3.57.1"
   },
   "private": true,
   "license": "MIT"
