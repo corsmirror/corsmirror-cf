@@ -32,7 +32,7 @@
     "eslint-plugin-tsdoc": "0.3.0",
     "husky": "9.1.2",
     "lint-staged": "15.2.7",
-    "marked": "13.0.2",
+    "marked": "13.0.3",
     "typescript": "5.5.4",
     "wrangler": "3.67.1"
   },
