@@ -1,4 +1,5 @@
 import { defineConfig } from 'cypress';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 import createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor';
 // @ts-expect-error module exists
