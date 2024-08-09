@@ -17,7 +17,7 @@
     "costatus": "1.0.1"
   },
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "20.1.0",
+    "@badeball/cypress-cucumber-preprocessor": "20.1.2",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.2",
     "@cloudflare/workers-types": "4.20240806.0",
     "@commitlint/cli": "19.4.0",
