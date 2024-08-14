@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "lint:tsc": "tsc --noEmit -p functions",
-    "postinstall": "husky install",
+    "prepare": "husky",
     "start": "npm run build && wrangler pages dev dist"
   },
   "dependencies": {
