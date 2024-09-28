@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://corsmirror.com/">
-    <img src="https://github.com/CORSmirror.png?size=300" alt="CORSmirror">
+    <img src="https://github.com/corsmirror.png?size=300" alt="CORSmirror">
   </a>
 </p>
 
@@ -37,7 +37,7 @@ Try it out: https://corsmirror.com/v1?url=http://example.com
 Clone the repository:
 
 ```sh
-git clone https://github.com/CORSmirror/corsmirror-cf.git
+git clone https://github.com/corsmirror/corsmirror-cf.git
 cd corsmirror-cf
 ```
 
@@ -63,7 +63,7 @@ open http://127.0.0.1:8788
 
 ## Contributions
 
-This is an open source project so feel free to fork the [repository](https://github.com/CORSmirror/corsmirror-cf/fork). Contributions are welcome!
+This is an open source project so feel free to fork the [repository](https://github.com/corsmirror/corsmirror-cf/fork). Contributions are welcome!
 
 ## Support
 
@@ -75,4 +75,4 @@ This is an open source project so feel free to fork the [repository](https://git
 
 ## License
 
-[MIT](https://github.com/CORSmirror/corsmirror-cf/blob/master/LICENSE)
+[MIT](https://github.com/corsmirror/corsmirror-cf/blob/master/LICENSE)
