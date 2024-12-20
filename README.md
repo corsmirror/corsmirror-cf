@@ -20,7 +20,13 @@ https://corsmirror.com/v1?url=<url>
 
 > Replace `<url>` with your URL.
 
-So to [fetch](https://developer.mozilla.org/docs/Web/API/Fetch_API/Using_Fetch) [`http://example.com`](http://example.com):
+To [cURL](https://curl.se/) [`https://httpbin.org/headers`](https://httpbin.org/headers):
+
+```sh
+curl -o - -I 'https://corsmirror.com/v1?url=https://httpbin.org/headers' -H "accept: application/json" -H "Authorization: Bearer"
+```
+
+To [fetch](https://developer.mozilla.org/docs/Web/API/Fetch_API/Using_Fetch) [`http://example.com`](http://example.com):
 
 ```js
 fetch('https://corsmirror.com/v1?url=http://example.com')
