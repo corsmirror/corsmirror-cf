@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+// @ts-expect-error Cannot find module 'costatus'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
 import { BAD_REQUEST } from 'costatus';
 
 import { CORS_HEADERS } from './constants';
@@ -57,5 +56,6 @@ export const onRequestOptions: PagesFunction = () => {
     },
     {},
   );
+
   return new Response(null, { headers });
 };
