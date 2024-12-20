@@ -1,6 +1,7 @@
 *.log
 *.swp
 .DS_Store
+.wrangler/
 cdn-cgi/
 coverage/
 dist/
