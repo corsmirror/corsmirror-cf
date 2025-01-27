@@ -28,7 +28,7 @@
     "@typescript-eslint/parser": "8.22.0",
     "cypress": "13.17.0",
     "cypress-cucumber-steps": "3.63.0",
-    "eslint": "9.18.0",
+    "eslint": "9.19.0",
     "eslint-plugin-prettier": "5.2.3",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-tsdoc": "0.4.0",
