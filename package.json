@@ -34,7 +34,7 @@
     "eslint-plugin-tsdoc": "0.4.0",
     "globals": "15.14.0",
     "husky": "9.1.7",
-    "lint-staged": "15.4.2",
+    "lint-staged": "15.4.3",
     "marked": "15.0.6",
     "typescript": "5.7.3",
     "wrangler": "3.105.0"
