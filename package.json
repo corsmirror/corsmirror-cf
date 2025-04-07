@@ -35,7 +35,7 @@
     "globals": "16.0.0",
     "husky": "9.1.7",
     "lint-staged": "15.5.0",
-    "marked": "15.0.7",
+    "marked": "15.0.8",
     "typescript": "5.8.2",
     "wrangler": "4.7.1"
   },
