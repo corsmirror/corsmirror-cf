@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.6](https://github.com/corsmirror/corsmirror-cf/compare/v1.0.5...v1.0.6) (2025-05-07)
+
+### Miscellaneous Chores
+
+- release 1.0.6 ([c1af48e](https://github.com/corsmirror/corsmirror-cf/commit/c1af48ec3d6378e0d66be22ce27425b1cc730e6d))
+
 ## [1.0.5](https://github.com/corsmirror/corsmirror-cf/compare/v1.0.4...v1.0.5) (2024-10-07)
 
 ### Miscellaneous Chores
