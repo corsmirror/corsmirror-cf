@@ -19,7 +19,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "22.2.0",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.5",
-    "@cloudflare/workers-types": "4.20250719.0",
+    "@cloudflare/workers-types": "4.20250722.0",
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@eslint/eslintrc": "3.3.1",
