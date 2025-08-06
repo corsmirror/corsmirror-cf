@@ -14,7 +14,7 @@
     "start": "npm run build && wrangler pages dev dist"
   },
   "dependencies": {
-    "costatus": "1.0.2"
+    "costatus": "1.0.3"
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "22.2.0",
