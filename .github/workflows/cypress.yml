@@ -1,6 +1,9 @@
 name: cypress
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   cypress:
     runs-on: ubuntu-latest

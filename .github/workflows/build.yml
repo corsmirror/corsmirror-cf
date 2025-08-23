@@ -1,6 +1,9 @@
 name: build
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,11 +17,11 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
           cache: npm
+          node-version-file: .nvmrc
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci --prefer-offline
 
       - name: Lint commit message
         run: npx commitlint --from=HEAD~1
