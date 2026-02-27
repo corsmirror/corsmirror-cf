@@ -26,14 +26,14 @@ jobs:
 
       - name: Record failed screenshots
         if: failure()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
       - name: Record videos
         if: failure()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: cypress-videos
           path: cypress/videos
