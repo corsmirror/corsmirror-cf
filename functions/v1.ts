@@ -1,16 +1,6 @@
-import { BAD_REQUEST, TOO_MANY_REQUESTS } from 'costatus';
+import { BAD_REQUEST } from 'costatus';
 
 import { CORS_HEADERS } from './constants';
-
-interface RateLimit {
-  limit(options: { key: string }): Promise<{
-    success: boolean;
-  }>;
-}
-
-interface Env {
-  RATE_LIMITER: RateLimit;
-}
 
 /**
  * GET|HEAD|POST|PUT|DELETE|PATCH /v1
@@ -20,22 +10,7 @@ interface Env {
  * @param context - Context.
  * @returns - Response.
  */
-export const onRequest: PagesFunction<Env> = async (context) => {
-  // Check rate limit using client IP
-  const clientIP = context.request.headers.get('CF-Connecting-IP') || 'unknown';
-  const rateLimitResult = await context.env.RATE_LIMITER.limit({
-    key: clientIP,
-  });
-
-  if (!rateLimitResult.success) {
-    return new Response('Rate limit exceeded. Try again later.', {
-      status: TOO_MANY_REQUESTS,
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    });
-  }
-
+export const onRequest: PagesFunction = async (context) => {
   const url = new URL(context.request.url).searchParams.get('url');
 
   if (!url) {
