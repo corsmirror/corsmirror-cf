@@ -16,7 +16,7 @@ export async function checkRateLimit(
 ): Promise<boolean> {
   const now = Math.floor(Date.now() / 1000);
   const windowStart = Math.floor(now / RATE_LIMIT_WINDOW) * RATE_LIMIT_WINDOW;
-  const key = `ratelimit:${clientIP}:${windowStart}`;
+  const key = `ratelimit:${clientIP}:${String(windowStart)}`;
 
   for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
     // Read current count

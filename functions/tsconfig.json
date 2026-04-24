@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "../node_modules/.tmp/tsconfig.functions.tsbuildinfo",
     "target": "esnext",
     "module": "esnext",
+    "moduleResolution": "bundler",
     "lib": ["esnext"],
     "types": ["@cloudflare/workers-types"]
-  }
+  },
+  "include": ["**/*.ts"]
 }

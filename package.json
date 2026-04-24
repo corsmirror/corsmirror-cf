@@ -9,7 +9,7 @@
     "cypress:open": "cypress open",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "lint:tsc": "tsc --noEmit -p functions",
+    "lint:tsc": "tsc --build --noEmit",
     "prepare": "husky",
     "start": "npm run build && wrangler pages dev dist",
     "test": "autocannon -c 10 -d 10 'https://corsmirror.pages.dev/v1?url=https://httpbin.org/get'"
@@ -23,6 +23,7 @@
     "@cloudflare/workers-types": "4.20260424.1",
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
+    "@eslint/compat": "2.0.5",
     "@eslint/js": "10.0.1",
     "autocannon": "8.0.0",
     "cypress": "15.14.1",
