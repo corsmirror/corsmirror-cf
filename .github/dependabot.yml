@@ -10,16 +10,17 @@ updates:
     schedule:
       interval: 'daily'
     groups:
+      cloudflare:
+        patterns:
+          - @cloudflare/workers-types
+          - wrangler
       commitlint:
         patterns:
           - '@commitlint/*'
-      prettier:
+      eslint:
         patterns:
+          - '*eslint*'
           - prettier
-          - eslint-plugin-prettier
-      typescript-eslint:
-        patterns:
-          - '@typescript-eslint/*'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
