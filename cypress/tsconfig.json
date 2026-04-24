@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "../node_modules/.tmp/tsconfig.cypress.tsbuildinfo",
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["esnext", "dom"],
+    "types": ["cypress", "node"]
+  },
+  "include": ["**/*.ts", "../cypress.config.ts"]
+}

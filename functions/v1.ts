@@ -17,7 +17,7 @@ interface Env {
  */
 export const onRequest: PagesFunction<Env> = async (context) => {
   // Check rate limit using client IP
-  const clientIP = context.request.headers.get('CF-Connecting-IP') || 'unknown';
+  const clientIP = context.request.headers.get('CF-Connecting-IP') ?? 'unknown';
   const allowed = await checkRateLimit(context.env.RATE_LIMIT_KV, clientIP);
 
   if (!allowed) {
