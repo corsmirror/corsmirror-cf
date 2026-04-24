@@ -11,8 +11,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:tsc": "tsc --build --noEmit",
     "prepare": "husky",
-    "start": "npm run build && wrangler pages dev dist",
-    "test": "autocannon -c 10 -d 10 'https://corsmirror.pages.dev/v1?url=https://httpbin.org/get'"
+    "start": "npm run build && wrangler pages dev dist"
   },
   "dependencies": {
     "costatus": "1.0.3"
@@ -25,7 +24,6 @@
     "@commitlint/config-conventional": "20.5.0",
     "@eslint/compat": "2.0.5",
     "@eslint/js": "10.0.1",
-    "autocannon": "8.0.0",
     "cypress": "15.14.1",
     "cypress-cucumber-steps": "3.64.2",
     "eslint": "10.2.1",
