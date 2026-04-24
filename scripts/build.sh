@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 OUTPUT_DIRECTORY=dist
 OUTPUT_FILE=$OUTPUT_DIRECTORY/index.html
