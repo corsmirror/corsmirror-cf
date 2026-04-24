@@ -23,10 +23,7 @@
     "@cloudflare/workers-types": "4.20260424.1",
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
-    "@eslint/eslintrc": "3.3.5",
     "@eslint/js": "10.0.1",
-    "@typescript-eslint/eslint-plugin": "8.59.0",
-    "@typescript-eslint/parser": "8.59.0",
     "autocannon": "8.0.0",
     "cypress": "15.14.1",
     "cypress-cucumber-steps": "3.64.2",
@@ -39,6 +36,7 @@
     "lint-staged": "16.4.0",
     "marked": "18.0.2",
     "typescript": "6.0.3",
+    "typescript-eslint": "8.59.0",
     "wrangler": "4.84.1"
   },
   "private": true,
