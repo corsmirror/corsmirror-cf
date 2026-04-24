@@ -1,20 +1,4 @@
 {
   "name": "corsmirror",
-  "pages_build_output_dir": "dist",
-  "kv_namespaces": [
-    {
-      "binding": "RATE_LIMIT_KV",
-      "id": "0a80f5b54ffc449fbdb11e44cc65fb15"
-    }
-  ],
-  "env": {
-    "preview": {
-      "kv_namespaces": [
-        {
-          "binding": "RATE_LIMIT_KV",
-          "id": "8a7d99355ed544cebb0a4b83f89946c6"
-        }
-      ]
-    }
-  }
+  "pages_build_output_dir": "dist"
 }

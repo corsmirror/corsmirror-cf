@@ -1,11 +1,6 @@
-import { BAD_REQUEST, TOO_MANY_REQUESTS } from 'costatus';
+import { BAD_REQUEST } from 'costatus';
 
 import { CORS_HEADERS } from './constants';
-import { checkRateLimit } from './ratelimit';
-
-interface Env {
-  RATE_LIMIT_KV: KVNamespace;
-}
 
 /**
  * GET|HEAD|POST|PUT|DELETE|PATCH /v1
@@ -15,20 +10,7 @@ interface Env {
  * @param context - Context.
  * @returns - Response.
  */
-export const onRequest: PagesFunction<Env> = async (context) => {
-  // Check rate limit using client IP
-  const clientIP = context.request.headers.get('CF-Connecting-IP') ?? 'unknown';
-  const allowed = await checkRateLimit(context.env.RATE_LIMIT_KV, clientIP);
-
-  if (!allowed) {
-    return new Response('Rate limit exceeded. Try again later.', {
-      status: TOO_MANY_REQUESTS,
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    });
-  }
-
+export const onRequest: PagesFunction = async (context) => {
   const url = new URL(context.request.url).searchParams.get('url');
 
   if (!url) {
