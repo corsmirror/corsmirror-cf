@@ -1,4 +1,3 @@
-// @ts-expect-error Cannot find module 'costatus'. Did you mean to set the 'moduleResolution' option to 'nodenext', or to add aliases to the 'paths' option?
 import { BAD_REQUEST } from 'costatus';
 
 import { CORS_HEADERS } from './constants';
@@ -49,7 +48,7 @@ export const onRequest: PagesFunction = async (context) => {
  * @returns - Response.
  */
 export const onRequestOptions: PagesFunction = () => {
-  const headers = Object.values(CORS_HEADERS).reduce(
+  const headers = Object.values(CORS_HEADERS).reduce<Record<string, string>>(
     (accumulator, currentValue) => {
       accumulator[currentValue] = '*';
       return accumulator;
