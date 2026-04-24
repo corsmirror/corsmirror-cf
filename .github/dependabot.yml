@@ -12,7 +12,7 @@ updates:
     groups:
       cloudflare:
         patterns:
-          - @cloudflare/workers-types
+          - '@cloudflare/workers-types'
           - wrangler
       commitlint:
         patterns:
