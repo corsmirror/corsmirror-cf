@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.7 (2026-04-27)
+
+
+### Features
+
+* **functions:** add KV-based rate limiting ([78d53d1](https://github.com/corsmirror/corsmirror-cf/commit/78d53d1296e778bd75b222f68b69d8828f209bbd))
+* **functions:** add rate limiting using Cloudflare Rate Limiting API ([5f44075](https://github.com/corsmirror/corsmirror-cf/commit/5f4407591f3acca9a8bda65f24aaf90a2f04bbdd))
+
+
+### Bug Fixes
+
+* **functions:** remove rate limiting ([55a953c](https://github.com/corsmirror/corsmirror-cf/commit/55a953c55a4566e90c8d78deb0e1d7eaff5dcea1))
+* **ratelimit:** add retry logic to handle race conditions ([b6789e6](https://github.com/corsmirror/corsmirror-cf/commit/b6789e6dedc0c03677accd1e29b2198f609e58af))
+
+
+### Miscellaneous Chores
+
+* release 1.0.7 ([c8fca39](https://github.com/corsmirror/corsmirror-cf/commit/c8fca394cf710d6ce3d627766550a3b2ef1b1914))
+
 ## [1.0.7](https://github.com/corsmirror/corsmirror-cf/compare/v1.0.6...v1.0.7) (2025-10-22)
 
 ### Miscellaneous Chores
