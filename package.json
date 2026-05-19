@@ -32,10 +32,10 @@
     "eslint-plugin-tsdoc": "0.5.2",
     "globals": "17.6.0",
     "husky": "9.1.7",
-    "lint-staged": "17.0.5",
+    "lint-staged": "17.0.4",
     "marked": "18.0.3",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.59.4",
+    "typescript-eslint": "8.59.3",
     "wrangler": "4.92.0"
   },
   "private": true,
