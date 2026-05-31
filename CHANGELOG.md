@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.8](https://github.com/corsmirror/corsmirror-cf/compare/v1.0.7...v1.0.8) (2026-05-31)
+
+### Bug Fixes
+
+- handle invalid proxy urls ([#1368](https://github.com/corsmirror/corsmirror-cf/issues/1368)) ([8e8e30a](https://github.com/corsmirror/corsmirror-cf/commit/8e8e30a7f0ae950b2e0d19a52af99b875859b84c))
+
 ## [1.0.7](https://github.com/corsmirror/corsmirror-cf/compare/v1.0.6...v1.0.7) (2025-10-22)
 
 ### Miscellaneous Chores
