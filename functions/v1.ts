@@ -19,11 +19,20 @@ export const onRequest: PagesFunction = async (context) => {
     });
   }
 
+  let targetUrl: URL;
+  try {
+    targetUrl = new URL(url);
+    context.request = new Request(targetUrl.toString(), context.request);
+  } catch {
+    return new Response('Invalid URL string.', {
+      status: BAD_REQUEST,
+    });
+  }
+
   // Rewrite request to point to target URL.
   // This also makes the request mutable so you can add the correct
   // Origin header to make the API server think that this request is not cross-site.
-  context.request = new Request(url, context.request);
-  context.request.headers.set('Origin', new URL(url).origin);
+  context.request.headers.set('Origin', targetUrl.origin);
 
   // Recreate the response so you can modify the headers
   let response = await fetch(context.request);
