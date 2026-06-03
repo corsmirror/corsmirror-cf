@@ -19,7 +19,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "24.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.8",
-    "@cloudflare/workers-types": "4.20260531.1",
+    "@cloudflare/workers-types": "4.20260603.1",
     "@commitlint/cli": "21.0.2",
     "@commitlint/config-conventional": "21.0.2",
     "@eslint/compat": "2.1.0",
@@ -36,7 +36,7 @@
     "marked": "18.0.4",
     "typescript": "6.0.3",
     "typescript-eslint": "8.60.0",
-    "wrangler": "4.95.0"
+    "wrangler": "4.97.0"
   },
   "private": true,
   "license": "MIT"
