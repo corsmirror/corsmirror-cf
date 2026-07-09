@@ -36,7 +36,7 @@
     "marked": "18.0.5",
     "typescript": "6.0.3",
     "typescript-eslint": "8.63.0",
-    "wrangler": "4.108.0"
+    "wrangler": "4.109.0"
   },
   "private": true,
   "license": "MIT"
