@@ -18,10 +18,16 @@ jobs:
           cache: npm
           node-version-file: .nvmrc
 
+      - name: Set compatibility date
+        id: compatibility_date
+        run: echo "date=$(date -d "1 month ago" +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
       - name: Cypress run
         uses: cypress-io/github-action@v7
         with:
-          start: npm start
+          start: |
+            npm run build
+            wrangler pages dev dist --compatibility-date=${{ steps.compatibility_date.outputs.date }}
           wait-on: 'http://localhost:8788'
 
       - name: Record failed screenshots
