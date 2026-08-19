@@ -25,9 +25,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v7
         with:
-          start: |
-            npm run build
-            wrangler pages dev dist --compatibility-date=${{ steps.compatibility_date.outputs.date }}
+          start: npm start -- --compatibility-date=${{ steps.compatibility_date.outputs.date }}
           wait-on: 'http://localhost:8788'
 
       - name: Record failed screenshots
