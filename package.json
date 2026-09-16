@@ -33,7 +33,7 @@
     "globals": "17.12.0",
     "husky": "9.1.7",
     "lint-staged": "17.5.1",
-    "marked": "18.0.12",
+    "marked": "18.0.13",
     "typescript": "6.0.3",
     "typescript-eslint": "8.70.0",
     "wrangler": "4.131.1"
