@@ -1,4 +1,4 @@
-import eslint from '@eslint/js';
+import js from '@eslint/js';
 import { defineConfig, includeIgnoreFile } from 'eslint/config';
 import prettier from 'eslint-plugin-prettier';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
@@ -14,11 +14,14 @@ export default defineConfig([
 
     plugins: {
       'simple-import-sort': simpleImportSort,
-      eslint,
       prettier,
     },
 
-    extends: [eslint.configs.recommended, tseslint.configs.recommended],
+    extends: [
+      js.configs.recommended,
+      tseslint.configs.strictTypeChecked,
+      tseslint.configs.stylisticTypeChecked,
+    ],
 
     languageOptions: {
       parserOptions: {
@@ -29,7 +32,6 @@ export default defineConfig([
 
     rules: {
       'no-console': 'error',
-      'no-debugger': 'error',
       'prettier/prettier': 'error',
       'simple-import-sort/exports': 'error',
       'simple-import-sort/imports': 'error',
@@ -40,7 +42,7 @@ export default defineConfig([
     files: ['functions/**/*.ts', 'cypress/**/*.ts', 'cypress.config.ts'],
 
     extends: [
-      tseslint.configs.recommendedTypeChecked,
+      js.configs.recommended,
       tseslint.configs.strictTypeChecked,
       tseslint.configs.stylisticTypeChecked,
     ],
@@ -50,6 +52,13 @@ export default defineConfig([
         project: ['cypress/tsconfig.json', 'functions/tsconfig.json'],
         tsconfigRootDir: import.meta.dirname,
       },
+    },
+
+    rules: {
+      'no-console': 'error',
+      'prettier/prettier': 'error',
+      'simple-import-sort/exports': 'error',
+      'simple-import-sort/imports': 'error',
     },
   },
 ]);
