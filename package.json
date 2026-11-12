@@ -17,13 +17,13 @@
     "costatus": "1.0.4"
   },
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "28.0.0",
+    "@badeball/cypress-cucumber-preprocessor": "28.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "2.2.8",
     "@cloudflare/workers-types": "5.20261109.1",
     "@commitlint/cli": "21.2.4",
     "@commitlint/config-conventional": "21.2.4",
     "@eslint/js": "10.0.1",
-    "cypress": "16.1.0",
+    "cypress": "16.2.1",
     "cypress-cucumber-steps": "3.64.3",
     "eslint": "10.14.0",
     "eslint-plugin-prettier": "5.5.7",
