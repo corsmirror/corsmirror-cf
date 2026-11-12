@@ -11,7 +11,7 @@ Feature: v1
     Then I see response status 400
       And I see response body "Invalid URL string."
 
-  Scenario: I see example page
-    Given I visit "/v1?url=http://example.com"
+  Scenario: I see CORSmirror page
+    Given I visit "/v1?url=https://corsmirror.com/"
       | failOnStatusCode | false |
-    Then I see heading "Example Domain"
+    Then I see text "CORSmirror is a RESTful API that provides a proxy to URLs with CORS enabled."
