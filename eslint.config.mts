@@ -1,14 +1,10 @@
-import { fileURLToPath } from 'node:url';
-
-import { includeIgnoreFile } from '@eslint/compat';
 import eslint from '@eslint/js';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 import prettier from 'eslint-plugin-prettier';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-const gitignorePath = fileURLToPath(new URL('.gitignore', import.meta.url));
+const gitignorePath = new URL('.gitignore', import.meta.url).pathname;
 
 export default defineConfig([
   includeIgnoreFile(gitignorePath),
@@ -25,9 +21,9 @@ export default defineConfig([
     extends: [eslint.configs.recommended, tseslint.configs.recommended],
 
     languageOptions: {
-      globals: {
-        ...globals.node,
-        ...globals.serviceworker,
+      parserOptions: {
+        project: ['tsconfig.node.json'],
+        tsconfigRootDir: import.meta.dirname,
       },
     },
 
@@ -50,12 +46,8 @@ export default defineConfig([
     ],
 
     languageOptions: {
-      globals: {
-        ...globals.node,
-        ...globals.serviceworker,
-      },
       parserOptions: {
-        projectService: true,
+        project: ['cypress/tsconfig.json', 'functions/tsconfig.json'],
         tsconfigRootDir: import.meta.dirname,
       },
     },

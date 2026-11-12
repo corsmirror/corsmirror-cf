@@ -1,7 +1,8 @@
 {
   "files": [],
   "references": [
-    { "path": "./cypress/tsconfig.json" },
-    { "path": "./functions/tsconfig.json" }
+    { "path": "./functions/tsconfig.json" },
+    { "path": "./functions/tsconfig.json" },
+    { "path": "./tsconfig.node.json" }
   ]
 }
