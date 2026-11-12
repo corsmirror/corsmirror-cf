@@ -77,7 +77,8 @@ Feel free to fork the [repository](https://github.com/corsmirror/corsmirror-cf/f
 - [Patreon](https://b.remarkabl.org/patreon)
 - [Ko-fi](https://b.remarkabl.org/ko-fi)
 - [Liberapay](https://b.remarkabl.org/liberapay)
-- [Teespring](https://b.remarkabl.org/teespring)
+- [Buy Me a Coffee](https://buymeacoffee.com/remarkablemark)
+- [thanks.dev](https://thanks.dev/u/gh/remarkablemark)
 
 ## License
 
