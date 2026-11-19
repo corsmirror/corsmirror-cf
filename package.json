@@ -34,7 +34,7 @@
     "lint-staged": "17.6.1",
     "marked": "18.2.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.72.2",
+    "typescript-eslint": "8.73.0",
     "wrangler": "4.163.0"
   },
   "private": true,
