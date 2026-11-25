@@ -31,7 +31,7 @@
     "eslint-plugin-simple-import-sort": "14.0.0",
     "eslint-plugin-tsdoc": "0.5.4",
     "husky": "9.1.7",
-    "lint-staged": "17.6.1",
+    "lint-staged": "17.6.2",
     "marked": "18.2.1",
     "typescript": "6.0.3",
     "typescript-eslint": "8.73.0",
